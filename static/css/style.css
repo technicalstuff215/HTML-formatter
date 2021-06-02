@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
+
+
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    z-index: 10;
+    background: #eeeeee;
+    -webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 7px 8px rgba(0, 0, 0, 0.12);
+    position:fixed;
+}
+
+.my-head{
+    color: rgb(116, 22, 22);
+    margin: 10px 10px 10px 15px;
+    font-family: 'Fredoka One', sans-serif;
+    font-weight: 200;
+    font-size: 50;
+    border-left: 8px solid rgb(116, 22, 22);
+    padding: 15px;
+}
+
+#my-line {
+    color: rgb(116, 22, 22);
+    margin: 0px 5px 0px 5px;
+}
+.my-bg{
+    background-color: rgba(223, 153, 153, 0.555);
+    background-attachment: fixed;
+}
+#my-section {
+    margin-left: 15px;
+    margin-top: 150;
+    /* position: absolute; */
+}
+.content {
+    font-family: 'Mukta', sans-serif;
+    font-size: 25px;
+    width:max-content;
+}
+#my-text {
+    margin-top: 80px;
+    /* position: absolute; */
+    margin-left: 70px;
+}
+.my-input {
+    width: 835px;
+    height: 350px;
+    max-height: 350px;
+    overflow: scroll;
+    margin-top: 12px; 
+    margin-right:20px;
+    white-space: nowrap; /*Maybe needed Later*/
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: large;
+    resize: none;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.my-input:active {
+    width: 835px;
+    height: 350px;
+    max-height: 350px;
+    overflow: scroll;
+    margin-top: 12px; 
+    margin-right:20px;
+    white-space: nowrap; /*Maybe needed Later*/
+    font-family: 'Source Code Pro', sans-serif;
+    font-size: large;
+    resize: none; 
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.my-select {
+    /* margin-top: 320px;
+    margin-bottom: -300px;
+    position: absolute; */
+    background-color: #eeeeee;
+    color: rgb(116, 22, 22);
+    padding : 5px;
+    border-radius: 4px;
+}
+.my-select:hover{
+    background-color: rgb(116, 22, 22);
+    color: #eeeeee;
+}
+.opt {
+    background-color: white;
+    color: rgb(116, 22, 22);
+}
+.opt:hover {
+    background-color: rgb(116, 22, 22);
+    color: white;
+}
+.bt {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 15px;
+    height:25px;
+    background-color: bisque;
+    color: rgb(116, 22, 22);
+    border-radius: 20px;
+    width: 100px;
+}
+.bt:hover {
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 15px;
+    height:25px;
+    background-color: rgb(116, 22, 22);
+    color: bisque;
+    border-radius: 20px;
+    width: 100px;
+}
+::-webkit-scrollbar {
+    width: 12px;
+    height:12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(134, 128, 128); 
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: brown; 
+}
+@media screen and (max-width: 480px) {
+    header{
+        position:fixed;
+    }
+    #my-text {
+        /*position: absolute;
+        margin-left: 70px;*/ 
+        padding: 60px 7px;
+    }
+    .content {
+        font-family: 'Mukta', sans-serif;
+        font-size: 25px;
+        width:max-content;
+    }
+    .my-input {
+        width: 835px;
+        height: 350px;
+        max-width: 835px;
+        max-height: 350px;
+        overflow: scroll;
+        margin-right: 70px;
+    }
+    .my-input:active {
+        width: 835px;
+        height: 350px;
+        max-height: 350px;
+        overflow: scroll;
+        margin-right:20px;
+        white-space: nowrap; /*Maybe needed Later*/
+        font-family: 'Source Code Pro', sans-serif;
+        font-size: large;
+        resize: none;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    .bt {
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 15px;
+        height:25px;
+        background-color: bisque;
+        color: rgb(116, 22, 22);
+        border-radius: 20px;
+        width: 100px;
+    }
+    .bt:hover {
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 15px;
+        height:25px;
+        background-color: rgb(116, 22, 22);
+        color: bisque;
+        border-radius: 20px;
+        width: 100px;
+    }
+}

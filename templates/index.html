@@ -1,0 +1,64 @@
+<!DOCTYPE html5>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta content="width=device-width, initial-scale=1.0" name="viewport">
+      <meta content="Aligns improper HTML code." name="description">
+      <meta content="html,HTML,formatter" name="keywords">
+      <title>HTML-Formatter</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+   </head>
+   <body class="my-bg">
+      <header class="my-header">
+         <h2 class="my-head">Html Formatter!</h2>
+         <hr id="my-line">
+      </header>
+      <section id="my-section">
+         <ul class="content">
+            <li>Messed up with your Html code? Chill!!</li>
+            <li>Presenting you the simple and cool HTML formatter.</li>
+            <li>Copy / Type your Html code in the below box and hit Convert.</li>
+            <li>Sit Back and relax, We'll give you the neat, formatted HTML code.</li>
+         </ul>
+      </section>
+      <section id="my-text">
+         <form method="POST">
+            <div>
+               <select class="my-select" name="optionnum">
+                  <option value="None" class="opt" >Indent space</option>
+                  <option value="5" class="opt">5</option>
+                  <option value="4" class="opt">4</option>
+                  <option value="3" class="opt">3</option>
+                  <option value="2" class="opt">2</option>
+                  <option value="1" class="opt">1</option>
+               </select>
+            </div>
+            {% if flag %}
+            <textarea class="my-input" name="incode">{{code}}</textarea>
+            {% if sc %}
+            <script>
+               alert("Please enter the intend spaces")
+            </script>
+            {% endif %}
+            {% else %}
+            <textarea class="my-input" placeholder="Paste/type your html code here...." name="incode"></textarea>
+            {% endif %}
+            <div id="buttons">
+               <button type="submit" class="bt my-button" formaction="convert">Convert</button>
+               <button id="cpy" class=" bt my-button">Copy</button>
+               <button type="submit"  class="bt my-button" formaction="reset">Reset</button>
+            </div>
+         </form>
+      </section>
+      <script type="text/javascript">
+         let copyButton = document.getElementById("cpy");
+         copyButton.addEventListener("click", event => {
+           event.preventDefault();
+           let textArea=document.querySelector(".my-input");
+           textArea.select();
+           document.execCommand('copy');
+           alert('Copied to clipboard!');
+         })
+     </script>
+   </body>
+</html>
